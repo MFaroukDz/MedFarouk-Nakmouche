@@ -11,7 +11,7 @@ const profileData = {
     "Antenna Engineer",
     "Machine Learning Enthusiast"
   ],
-  photo: "images/profile.png",
+  photo: "Images/profile.png",
   links: {
     email: "mailto:mohammed-farouk.nakmouche.1@ens.etsmtl.ca",
     github: "",
