@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>M.‑F. Nakmouche – Personal Site</title>
+    <title>M.-F. Nakmouche – Personal Site</title>
     <!-- Import Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,7 +18,23 @@
     <header class="site-header">
       <div class="container header-inner">
         <div class="logo">
-          <a href="#home" aria-label="Home">🏠</a>
+          <a href="#home" aria-label="Home" class="logo-link">
+            <!-- Monochrome SVG uses currentColor (black in light, white in dark) -->
+            <svg class="logo-icon" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+              <!-- roof -->
+              <path d="M3 10.5L12 4l9 6.5"
+                    fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round"/>
+              <!-- walls -->
+              <path d="M5 10.5V20a1 1 0 001 1h12a1 1 0 001-1v-9.5"
+                    fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round"/>
+              <!-- door -->
+              <path d="M9 21v-6h6v6"
+                    fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
         </div>
         <nav id="navbar" class="nav-links">
           <a href="#about">About</a>
