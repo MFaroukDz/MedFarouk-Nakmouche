@@ -576,3 +576,10 @@ a:hover {
     display: none; /* hide nav on mobile for simplicity */
   }
 }
+
+
+/* --- Monochrome Home Icon ---------------------------------------------- */
+.logo a { color: #000 !important; }
+body[data-theme='dark'] .logo a { color: #fff !important; }
+.logo-link { display: inline-flex; align-items: center; }
+.logo-icon { width: 22px; height: 22px; display: block; }
