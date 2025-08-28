@@ -54,10 +54,14 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }
     // Photo
-    const heroPhoto = document.getElementById('heroPhoto');
-    if (profileData.photo) {
-      heroPhoto.src = profileData.photo;
-    }
+   const heroPhoto = document.getElementById('heroPhoto');
+  if (profileData.photo) {
+  const testImg = new Image();
+  testImg.onload = () => { heroPhoto.src = profileData.photo; };
+  testImg.onerror = () => { heroPhoto.src = 'images/profile.png'; };
+  testImg.src = profileData.photo;
+}
+
   }
 
   // Social bar
