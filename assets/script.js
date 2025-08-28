@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (profileData.photo) {
   const testImg = new Image();
   testImg.onload = () => { heroPhoto.src = profileData.photo; };
-  testImg.onerror = () => { heroPhoto.src = 'images/profile.png'; };
+  testImg.onerror = () => { heroPhoto.src = 'Images/profile.png'; };
   testImg.src = profileData.photo;
 }
 
